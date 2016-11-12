@@ -7,10 +7,17 @@
 
 <br>
 
+
 <% if @searched_survivors.present? %>
   <%= render @searched_survivors %>
 <% elsif params[:search] %>
   <p>There are no survivors matching the query: <%= params[:search] %>.</p>
 <% end %>
 
+
 <%= link_to 'New Survivor', new_survivor_path %>
+<br>
+<a href="#notImplemented">New Resource</a>
+<br>
+
+
