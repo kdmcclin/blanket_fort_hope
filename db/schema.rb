@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20161112165933) do
   end
 
   create_table "survivors", force: :cascade do |t|
-    t.string   "pseudonym"
+    t.string   "name"
     t.integer  "age"
     t.string   "gender"
     t.string   "lgbtq"

@@ -15,9 +15,9 @@ MedicalNeed.create!([
 ])
 
 Survivor.create!([
-  {pseudonym: "Joan", age: 16, gender: "female"},
-  {pseudonym: "Daniel", age: 13, gender: "male", lgbtq: "bisexual"},
-  {pseudonym: "Em", age: 14, gender: "transgender"}
+  {name: "Joan", age: 16, gender: "female"},
+  {name: "Daniel", age: 13, gender: "male", lgbtq: "bisexual"},
+  {name: "Em", age: 14, gender: "transgender"}
 ])
 
 SurvivorMedicalNeed.create!([
