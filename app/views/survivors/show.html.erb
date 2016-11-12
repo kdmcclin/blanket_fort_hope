@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pseudonym:</strong>
+  <%= @survivor.pseudonym %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @survivor.age %>
+</p>
+
+<%= link_to 'Edit', edit_survivor_path(@survivor) %> |
+<%= link_to 'Back', survivors_path %>
