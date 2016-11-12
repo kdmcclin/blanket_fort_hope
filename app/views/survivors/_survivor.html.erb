@@ -1,0 +1,15 @@
+<% @searched_survivors.each do |survivor| %>
+  <div class="profile">
+  <p>
+    <strong>Name:</strong>
+    <%= survivor.name %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= survivor.age %>
+  </p>
+
+  <%= link_to 'Go to Profile', survivor_path(survivor) %> 
+  </div>
+<% end %>

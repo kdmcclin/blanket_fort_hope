@@ -4,7 +4,11 @@ class SurvivorsController < ApplicationController
   # GET /survivors
   # GET /survivors.json
   def index
-    @survivors = Survivor.all
+    if params[:search]
+      @searched_survivors = Survivor.search(params[:search]).order("created_at DESC")
+    else
+      @survivors = Survivor.all.order('created_at DESC')
+    end
   end
 
   # GET /survivors/1
@@ -69,6 +73,6 @@ class SurvivorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def survivor_params
-      params.require(:survivor).permit(:pseudonym, :age)
+      params.require(:survivor).permit(:name, :age)
     end
 end

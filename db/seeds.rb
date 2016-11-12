@@ -24,5 +24,4 @@ SurvivorMedicalNeed.create!([
   {survivor_id: 1, medical_need_id: 5},
   {survivor_id: 1, medical_need_id: 1},
   {survivor_id: 2, medical_need_id: 3},
-  {survivor_id: 3, medical_need_id: 1}
 ])

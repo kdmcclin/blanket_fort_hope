@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<%= form_tag(survivors_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Survivors" %>
+  <%= submit_tag "Search" %>
+<% end %>
+
 <br>
+
+<% if @searched_survivors.present? %>
+  <%= render @searched_survivors %>
+<% elsif params[:search] %>
+  <p>There are no survivors matching the query: <%= params[:search] %>.</p>
+<% end %>
 
 <%= link_to 'New Survivor', new_survivor_path %>
