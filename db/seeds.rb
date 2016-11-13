@@ -16,6 +16,7 @@ MedicalNeed.create!([
 
 Survivor.create!([
   {name: "Joan", age: 16, gender: "female"},
+  {name: "Jane", age: 15, gender: "female"},
   {name: "Daniel", age: 13, gender: "male", lgbtq: "bisexual"},
   {name: "Em", age: 14, gender: "transgender"}
 ])
